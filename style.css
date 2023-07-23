@@ -28,6 +28,7 @@ main {
     overflow: hidden;
     border-radius: 5%;
     max-width: 80%;
+    border: 1px solid white;
 }
 
 #display-input {
@@ -49,6 +50,7 @@ th {
     width: 60px;
     user-select: none;
     background: rgb(30, 48, 82);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 th:hover {
