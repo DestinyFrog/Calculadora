@@ -1,13 +1,13 @@
 // Input onde será mostrado os resultador e contas
-const display = document.getElementById('display-input');
+const display = document.getElementById('display-box');
 
 // Lista de todos os botões 
-const list_keys = Array.from( document.querySelectorAll('th') );
+const list_keys = Array.from( document.querySelectorAll('button') );
 list_keys.forEach( obj => obj.onclick = (ev) => Pressed( ev.target.textContent ) );
 
 // Operações Especiais
 const special_keys = {
-    ["AC"]: () => display.value = "",
+    ["C"]: () => display.value = "",
     ["="]: () => {
         const txt = display.value;
         const result = eval( txt );

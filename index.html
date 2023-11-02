@@ -5,49 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="icon" type="image/x-icon" href="#">
-    <link rel="stylesheet" href="style.css"/>
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 
 <body>
     <main>
-        <input type="text" id="display-input"/>
+		<div id="display">
+        	<input type="text" id="display-box">
+		</div>
 
-        <table id="keyboard">
-            <tr>
-                <th>+</th>
-                <th>-</th>
-                <th>*</th>
-                <th>/</th>
-            </tr>
+		<div id="keyboard">
+			<button class="darker">+</button>
+			<button class="darker">-</button>
+			<button class="darker">*</button>
+			<button class="darker">/</button>
+			<button class="result-button">=</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button class="darker">C</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button class="darker">.</button>
+			<button>0</button>
+			<button class="darker">+/-</button>
+		</div>
 
-            <tr>
-                <th>9</th>
-                <th>8</th>
-                <th>7</th>
-                <th>AC</th>
-            </tr>
-
-            <tr>
-                <th>6</th>
-                <th>5</th>
-                <th>4</th>
-                <th rowspan="3" style="background-color: orange">=</th>
-            </tr>
-
-            <tr>
-                <th>3</th>
-                <th>2</th>
-                <th>1</th>
-            </tr>
-
-            <tr>
-                <th>.</th>
-                <th>0</th>
-                <th>+/-</th>
-            </tr>
-        </table>
     </main>
+
+	<script src="./script.js"></script>
 </body>
 
 </html>
